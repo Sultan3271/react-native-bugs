@@ -1,9 +1,9 @@
 # react-native-bugs
-## Android Studio ( The emulator process for avd was terminated ) 
+1. ## Android Studio ( The emulator process for avd was terminated ) 
 download Install Microsoft c++ redistributable X64 from browser,
 and issue will be fixed
 
-## Ruby problem onn mac ( erro related nfk, cocoapods not installed, ruby version )
+2. ## Ruby problem onn mac ( erro related nfk, cocoapods not installed, ruby version )
 issue: etching nkf-0.2.0.gem Building native extensions. This could take a while... ERROR: Error installing nkf: ERROR: Failed to build gem native extension. current directory: /Library/Ruby/Gems/2.6.0/gems/nkf-0.2.0/ext/nkf /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20250910-33693-1hr9q4a.rb extconf.rb creating Makefile current directory: /Library/Ruby/Gems/2.6.0/gems/nkf-0.2.0/ext/nkf make "DESTDIR=" clean
  
 An error occurred while installing nkf (0.2.0), and Bundler cannot continue. Make sure that gem install nkf -v '0.2.0' --source 'https://rubygems.org/' succeeds before bundling. In Gemfile: cocoapods was resolved to 1.16.2, which depends on xcodeproj was resolved to 1.27.0, which depends on CFPropertyList was resolved to 3.0.7, which depends on nkf ✖ Installing Ruby Gems
@@ -104,6 +104,15 @@ uname -m
 ```
 
 I’ll tell you which path to use.
+
+
+
+3. ## Command PhaseScriptExecution failed with a nonzero exit code - Error when Archive/Build on Xcode(did everything but still)
+ Solution That Worked for Me:
+The problem was caused by a stale .xcode.env.local file that pointed to a removed Node.js version.
+Check your nnode versionn(node -v) annd update it in xcode.env.local
+
+
 
 
 
