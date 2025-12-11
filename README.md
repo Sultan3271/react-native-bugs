@@ -112,7 +112,8 @@ I’ll tell you which path to use.
 The problem was caused by a stale .xcode.env.local file that pointed to a removed Node.js version.
 Check your nnode versionn(node -v) annd update it in xcode.env.local
 
-
+4. ## compiledebugjavac failed (rn maps,screens, anyother library and also mentions cmake like 3.22.1)
+  solution is: All you have to do is go to android/build.gradle and change your ndk to up version like from 27.xxxx to 28.xxx and also install it in android studio sdk tool
 
 
 
